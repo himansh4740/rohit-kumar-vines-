@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Tamma+2&family=Bebas+Neue&family=Open+Sans:wght@300&family=PT+Sans&family=Poppins:wght@100;400;500&family=Roboto+Slab&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    overflow: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-color: #6e72fc;
+background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    cursor: pointer;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    transition: height 0.2s;
+
+    
+}
+.burger{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: none;
+    width: 31px;
+    cursor: pointer;
+}
+.line{
+    display: block;
+    width: 31px;
+    background-color: white;
+    height: 2px;
+    margin: 9px 18px;
+}
+.navbar ul{
+    height: 100%;
+    display: flex;
+   justify-content: center;
+    align-items: center; 
+    transition: height 0.1s;
+}
+.item{
+    margin: 0 34px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 50px;
+}
+#item-1{
+    border-bottom: 2px solid white;
+}
+.item a{
+    color: white;
+}
+section{
+    width: 89px;
+    height: 374px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 9px;
+    position: absolute;
+    top: 20%;
+    right: 34px;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
+}
+section img{
+    transition: all 1s;
+    cursor: pointer;
+}
+#youtube{
+    position: absolute;
+    top: 61%;
+    right: 8px;
+    width: 68px;
+    height: 66px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ff3030ed;
+}
+#instagram{
+    position: absolute;
+    top: 20%;
+    right: 8px;
+    width: 68px;
+    height: 66px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ff4162;
+}
+#facebook{
+    position: absolute;
+    border-radius: 50%;
+    top: 40%;
+    right: 8px;
+    width: 68px;
+    height: 66px;
+    padding: 10px;
+    background-color: #0072ff;
+}
+section img:hover{
+    transform: rotate(360deg);
+}
+#logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#short1{
+    width: 31px;
+    height: 30px;
+    padding: 5px;
+    background-color: #ff3030ed;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+#short2{
+    width: 31px;
+    height: 30px;
+    padding: 5px;
+    background-color: #ff4162;
+    border-radius: 50%;
+}
+#short3{
+    width: 31px;
+    height: 30px;
+    padding: 5px;
+    background-color: #0072ff;
+    border-radius: 50%;
+}
+.youtube{
+    width: 200px;
+    height: 30px;
+   
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+.instagram{
+    width: 200px;
+    height: 30px;
+   
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.facebook{
+    width: 200px;
+    height: 30px;
+    
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+span{
+    color: white;
+    margin-left: 12px;
+}
+
+@media only screen and (max-width: 514px){
+    .burger{
+        display: block;
+    }
+    .navbar ul{
+        flex-direction: column;
+        /* height: 245px; */
+        display: none;
+        height: 0px; 
+    }
+    .item{
+        /* margin-top: 34px; */
+    }
+    section{
+        width: 446px;
+    height: 68px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 9px;
+    position: absolute;
+    top: 82%;
+    right: 34px;
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
+    display: none;
+    }
+    #youtube{
+        position: absolute;
+        top: 4%;
+        right: 190px;
+        width: 60px;
+        height: 61px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #ff3030ed;
+    }
+    #instagram{
+        position: absolute;
+    top: 4%;
+    right: 327px;
+    width: 60px;
+    height: 61px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ff4162;
+    }
+    #facebook{
+        position: absolute;
+        top: 4%;
+        right: 52px;
+        width: 60px;
+        height: 61px;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #0072ff;
+    }
+
+}
+
+

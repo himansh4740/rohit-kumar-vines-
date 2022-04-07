@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubelelo</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Tamma+2&family=Bebas+Neue&family=Open+Sans:wght@300&family=PT+Sans&family=Poppins:wght@100;400;500&family=Roboto+Slab&family=Source+Sans+Pro&family=Ubuntu&display=swap"
+        rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="iconfavi.png">
+</head>
+<body>
+    <!-- This is the navbar -->
+    <div class="menu" id="menu">
+        <div class="div">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </div>
+    </div>
+    
+    <!-- This is the navigation panal -->
+    <div class="navigationpanal" id="navi">
+        <a href="index.html"><div class="item home">Home</div></a>
+        <a href="shop.html"><div class="item">Shopping</div></a>
+        <a href="about.html"><div class="item">About</div></a>
+    </div>
+
+    <!-- These are the cards -->
+    <div class="cards" id="card1" data-tilt>
+        <img src="profile.png" alt="">
+        <h2>Mike smith</h2>
+        <p>Hi, I am Mike. I am working in cubelelo and I like to learn code.</p>
+        <div class="links">
+            <a href=""><img src="facebook.png" alt=""></a>
+            <a href=""><img src="twitter.png" alt=""></a>
+            <a href=""><img src="telegram.png" alt=""></a>
+        </div>
+        <a href="" class="btn">Message me</a>
+    </div>
+    <div class="cards" id="card2" data-tilt>
+        <img src="user-1.png" alt="">
+        <h2>Marry jones</h2>
+        <p>Hi, I am Marry. I am working in cubelelo and I like to learn code.</p>
+        <div class="links">
+            <a href=""><img src="facebook.png" alt=""></a>
+            <a href=""><img src="twitter.png" alt=""></a>
+            <a href=""><img src="telegram.png" alt=""></a>
+        </div>
+        <a href="" class="btn">Message me</a>
+    </div> 
+    <div class="cards" id="card3" data-tilt>
+        <img src="user-2.png" alt="">
+        <h2>marks smith</h2>
+        <p>Hi, I am Marry. I am working in cubelelo and I like to learn code.</p>
+        <div class="links">
+            <a href=""><img src="facebook.png" alt=""></a>
+            <a href=""><img src="twitter.png" alt=""></a>
+            <a href=""><img src="telegram.png" alt=""></a>
+        </div>
+        <a href="" class="btn">Message me</a>
+    </div>
+
+    <script src="about.js"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script>
+        let line1 = document.getElementById('line1')
+        let line3 = document.getElementById('line3')
+        menu.addEventListener('click', ()=>{
+            menu.classList.toggle('openmenu')
+            line1.style.margin = '0'
+            line1.style.marginTop = '3px'
+            line3.style.margin = '0'
+
+        })
+    </script>
+</body>
+</html>

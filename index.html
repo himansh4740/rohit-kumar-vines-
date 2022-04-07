@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rohit Kumar Vines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="nav">
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="ul">
+                <li class="item" id="item-1"><a href="index.html">Home</a></li>
+                <li class="item" id="item-2"><a href="videos.html">videos</a></li>
+                <li class="item" id="item-3"><a href="blogs.html">Blogs</a></li>
+                <li class="item" id="item-4"><a href="about.html">about</a></li>
+                <li class="item" id="item-5"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <img id="logo" src="Logo.jpg" alt="">
+        <div class="youtube">
+            <img id="short1" src="youtube.svg" alt="">
+        <span id="span1">hidden</span>
+        </div>
+        <div class="instagram"><img id="short2" src="instagram.svg" alt="">
+        <span id="span2">29.1k followers</span></div>
+        <div class="facebook"><img id="short3" src="facebook.svg" alt="">
+        <span id="span3">2036 followers</span></div>
+        
+        <section>
+            <a href="https://www.youtube.com/channel/UCtP4qOV-HHeZeEu8f42w8-Q" target="_blank"><img src="youtube.svg" alt="" id="youtube"></a> 
+            <a href="https://www.facebook.com/profile.php?id=100053170292175" target="_blank"><img src="facebook.svg" alt="" id="facebook"></a> 
+            <a href="https://www.instagram.com/rohitkumar_f2f/" target="_blank"><img src="instagram.svg" alt="" id="instagram"></a> 
+
+        </section>
+    </header>
+    <script>
+        let burger = document.getElementById('burger')
+        let ul = document.getElementById('ul')
+        let nav = document.getElementById('nav')
+        burger.addEventListener('click', ()=>{
+            if(ul.style.display == 'none'){
+                ul.style.display = 'flex'
+            ul.style.height = '245px'
+            nav.style.height = '262px'
+
+            }
+            else{
+                ul.style.display = 'none'
+                nav.style.height = '65px'
+
+            }
+            
+        })
+    </script>
+</body>
+</html>

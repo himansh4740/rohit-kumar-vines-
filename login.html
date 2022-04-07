@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login - rohit kumar</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="nav">
+            <div class="burger" id="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="ul">
+                <li class="item" id="item-1"><a href="index.html">Home</a></li>
+                <li class="item" id="item-2"><a href="videos.html">videos</a></li>
+                <li class="item" id="item-3"><a href="blogs.html">Blogs</a></li>
+                <li class="item" id="item-4"><a href="about.html">about</a></li>
+                <li class="item" id="item-5"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="form" id="form">
+            <form action="noaction.com">
+                <div class="form1">
+                    <input type="text" name="" id="" placeholder="Enter your name">
+                </div>
+                <div class="form1">
+                    <input type="email" name="" id="" placeholder="enter your email">
+                </div>
+                <div class="form1">
+                    <input type="password" name="" id="" placeholder="enter password">
+                </div>
+                <div class="form1">
+                    <button class="btns">Submit</button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <script>
+        let burger = document.getElementById('burger')
+        let ul = document.getElementById('ul')
+        let nav = document.getElementById('nav')
+        burger.addEventListener('click', ()=>{
+            if(ul.style.display == 'none'){
+                ul.style.display = 'flex'
+            ul.style.height = '245px'
+            nav.style.height = '262px'
+
+            }
+            else{
+                ul.style.display = 'none'
+                nav.style.height = '65px'
+
+            }
+            
+        })
+    </script>
+</body>
+</html>
